@@ -34,10 +34,8 @@
         <!-- Question 1 -->
         <div class="question-section" id="question1">
             <h2 id="question1Text"></h2>
-
             <button class="cute-btn" onclick="moveButton(this)" id="yesBtn1"></button>
             <button class="cute-btn" onclick="moveButton(this)" id="noBtn1"></button>
-
             <div class="secret-answer">
                 <button class="cute-btn special" onclick="showNextQuestion(2)" id="secretAnswerBtn"></button>
             </div>
@@ -46,7 +44,6 @@
         <!-- Question 2 (Love Meter) -->
         <div class="question-section hidden" id="question2">
             <h2 id="question2Text"></h2>
-
             <div class="love-meter">
                 <input
                     type="range"
@@ -64,25 +61,35 @@
                     <span id="extraLove" class="hidden"></span>
                 </p>
             </div>
-
-            <!-- Goes to extra question -->
-            <button class="cute-btn" onclick="showNextQuestion('Extra')" id="nextBtn"></button>
+            <button class="cute-btn" onclick="showNextQuestion(3)" id="nextBtn"></button>
         </div>
 
-        <!-- EXTRA QUESTION (inserted in between) -->
-        <div class="question-section hidden" id="questionExtra">
-            <h2 id="questionExtraText"></h2>
+        <!-- Question 3 -->
+        <div class="question-section hidden" id="question3">
+            <h2 id="question3Text"></h2>
+            <button class="cute-btn" onclick="showNextQuestion(4)" id="yesBtn3"></button>
+            <button class="cute-btn" onclick="moveButton(this)" id="noBtn3"></button>
+        </div>
 
-            <button class="cute-btn" onclick="showNextQuestion(3)" id="yesBtnExtra"></button>
-            <button class="cute-btn" onclick="moveButton(this)" id="noBtnExtra"></button>
+        <!-- Question 4 -->
+        <div class="question-section hidden" id="question4">
+            <h2 id="question4Text"></h2>
+            <button class="cute-btn" onclick="showNextQuestion(5)" id="yesBtn4"></button>
+            <button class="cute-btn" onclick="moveButton(this)" id="noBtn4"></button>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question-section hidden" id="question5">
+            <h2 id="question5Text"></h2>
+            <button class="cute-btn" onclick="showNextQuestion(6)" id="yesBtn5"></button>
+            <button class="cute-btn" onclick="moveButton(this)" id="noBtn5"></button>
         </div>
 
         <!-- Final Question -->
-        <div class="question-section hidden" id="question3">
-            <h2 id="question3Text"></h2>
-
-            <button class="cute-btn final-yes" onclick="celebrate()" id="yesBtn3"></button>
-            <button class="cute-btn" onclick="moveButton(this)" id="noBtn3"></button>
+        <div class="question-section hidden" id="question6">
+            <h2 id="question6Text"></h2>
+            <button class="cute-btn final-yes" onclick="celebrate()" id="yesBtn6"></button>
+            <button class="cute-btn" onclick="moveButton(this)" id="noBtn6"></button>
         </div>
 
         <!-- Celebration Screen -->
@@ -95,8 +102,6 @@
 
     <!-- Scripts -->
     <script src="config.js"></script>
-    <script src="theme.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
