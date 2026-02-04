@@ -21,23 +21,43 @@ const CONFIG = {
     // Questions and answers
     // Customize each question and its possible responses
     questions: {
-        first: {
-            text: "Bubbachii, will you be mine 🫣🫣?? Forever 🤭???",                                    // First interaction
-            yesBtn: "Yes",                                             // Text for "Yes" button
-            noBtn: "No",                                               // Text for "No" button
-            secretAnswer: "I'm already Yours! ❤️"           // Secret hover message
-        },
-        second: {
-            text: "How much do you love me?",                          // For the love meter
-            startText: "This much!",                                   // Text before the percentage
-            nextBtn: "Next ❤️"                                         // Text for the next button
-        },
-        third: {
-            text: "Will you be my forever Valentine? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
-        }
+    first: {
+        text: "Bubbachii, I have something for you! Are you ready 🫣🫣🤭???",
+        yesBtn: "Yes",
+        noBtn: "No",
+        secretAnswer: "Obviously Yes! ❤️"
     },
+
+    second: {
+        text: "How much do you love me?",
+        startText: "This much!",
+        nextBtn: "Next ❤️"
+    },
+
+    third: {
+        text: "Will you go on cute dates with me this year? 💘",
+        yesBtn: "Obviously 💖",
+        noBtn: "Let me think 😏"
+    },
+
+    fourth: {
+        text: "Will you hold my hand in public and private? 🫶",
+        yesBtn: "Always 🥰",
+        noBtn: "Depends 😌"
+    },
+
+    fifth: {
+        text: "Will you annoy me forever and still love me? 😏❤️",
+        yesBtn: "That’s my job 😘",
+        noBtn: "Hmm 👀"
+    },
+
+    final: {
+        text: "Will you be my forever Valentine? 🌹",
+        yesBtn: "Yes!!! 💍💖",
+        noBtn: "No 😝"
+    }
+},
 
     // Love meter messages
     // They show up depending on how far they slide the meter
