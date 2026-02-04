@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine Page</title>
 
-    <!-- Browser tab title -->
-    <title>Will You Be My Valentine? 💝</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
+<!-- Styles -->
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <!-- Floating Background Elements -->
     <div class="floating-elements"></div>
 
@@ -31,31 +28,18 @@
             </audio>
         </div>
 
-        <!-- Question 1 -->
+        <!-- Questions -->
         <div class="question-section" id="question1">
             <h2 id="question1Text"></h2>
-
-            <button class="cute-btn" onclick="moveButton(this)" id="yesBtn1"></button>
+            <button class="cute-btn" onclick="showNextQuestion(2)" id="yesBtn1"></button>
             <button class="cute-btn" onclick="moveButton(this)" id="noBtn1"></button>
-
-            <div class="secret-answer">
-                <button class="cute-btn special" onclick="showNextQuestion(2)" id="secretAnswerBtn"></button>
-            </div>
+            <button class="cute-btn special" onclick="showNextQuestion(2)" id="secretAnswerBtn"></button>
         </div>
 
-        <!-- Question 2 (Love Meter) -->
         <div class="question-section hidden" id="question2">
             <h2 id="question2Text"></h2>
-
             <div class="love-meter">
-                <input
-                    type="range"
-                    min="0"
-                    max="10000"
-                    value="100"
-                    class="slider"
-                    id="loveMeter"
-                />
+                <input type="range" min="0" max="10000" value="100" class="slider" id="loveMeter">
                 <p>
                     <span class="love-value-container">
                         <span id="startText"></span>
@@ -64,25 +48,31 @@
                     <span id="extraLove" class="hidden"></span>
                 </p>
             </div>
-
-            <!-- Goes to extra question -->
-            <button class="cute-btn" onclick="showNextQuestion('Extra')" id="nextBtn"></button>
+            <button class="cute-btn" onclick="showNextQuestion(3)" id="nextBtn"></button>
         </div>
 
-        <!-- EXTRA QUESTION (inserted in between) -->
-        <div class="question-section hidden" id="questionExtra">
-            <h2 id="questionExtraText"></h2>
-
-            <button class="cute-btn" onclick="showNextQuestion(3)" id="yesBtnExtra"></button>
-            <button class="cute-btn" onclick="moveButton(this)" id="noBtnExtra"></button>
-        </div>
-
-        <!-- Final Question -->
         <div class="question-section hidden" id="question3">
             <h2 id="question3Text"></h2>
-
-            <button class="cute-btn final-yes" onclick="celebrate()" id="yesBtn3"></button>
+            <button class="cute-btn" onclick="showNextQuestion(4)" id="yesBtn3"></button>
             <button class="cute-btn" onclick="moveButton(this)" id="noBtn3"></button>
+        </div>
+
+        <div class="question-section hidden" id="question4">
+            <h2 id="question4Text"></h2>
+            <button class="cute-btn" onclick="showNextQuestion(5)" id="yesBtn4"></button>
+            <button class="cute-btn" onclick="moveButton(this)" id="noBtn4"></button>
+        </div>
+
+        <div class="question-section hidden" id="question5">
+            <h2 id="question5Text"></h2>
+            <button class="cute-btn" onclick="showNextQuestion(6)" id="yesBtn5"></button>
+            <button class="cute-btn" onclick="moveButton(this)" id="noBtn5"></button>
+        </div>
+
+        <div class="question-section hidden" id="question6">
+            <h2 id="question6Text"></h2>
+            <button class="cute-btn final-yes" onclick="celebrate()" id="yesBtn6"></button>
+            <button class="cute-btn" onclick="moveButton(this)" id="noBtn6"></button>
         </div>
 
         <!-- Celebration Screen -->
@@ -95,8 +85,6 @@
 
     <!-- Scripts -->
     <script src="config.js"></script>
-    <script src="theme.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
